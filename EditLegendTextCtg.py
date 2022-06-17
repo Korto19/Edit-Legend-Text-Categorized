@@ -54,7 +54,7 @@ from qgis.PyQt.QtGui import QIcon
 
 class EditLegendTextCtg_ProcessingAlgorithm(QgsProcessingAlgorithm):
     """
-    Algorithm that fractions a poligon in n parts.
+    Algorithm that give an attribute field modify legend
     """
     INPUT        = 'INPUT'         #layer
     INPUT_NEW    = 'INPUT_NEW'     #campo nuova legenda
