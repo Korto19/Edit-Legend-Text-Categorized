@@ -122,6 +122,7 @@ class EditLegendTextCtg_ProcessingAlgorithm(QgsProcessingAlgorithm):
         
         return self.tr(header + "Modifica la legenda di un layer categorizzato in base ad un altro campo<p>\
             <ul><li><strong><mark style='color:blue'>riconosce le categorizzazione con espressione</strong></li>\
+            <li><strong><mark style='color:blue'>modifica solo il testo descrittivo</strong></li>\
             <li><strong><mark style='color:blue'>versione minima QGIS 3.24</strong></li></ul>\
             <strong><mark style='color:blue'></strong>\
             ")
@@ -144,7 +145,7 @@ class EditLegendTextCtg_ProcessingAlgorithm(QgsProcessingAlgorithm):
         self.addParameter(
             QgsProcessingParameterField(
                 self.INPUT_NEW,
-                'Campo da inserire',
+                'Attributo da inserire',
                 #defaultValue = 'nomePDF',
                 parentLayerParameterName=self.INPUT
             )
